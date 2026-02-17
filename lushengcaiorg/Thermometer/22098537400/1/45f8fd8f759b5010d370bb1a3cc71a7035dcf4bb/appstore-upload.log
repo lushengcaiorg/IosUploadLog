@@ -1,0 +1,14 @@
+Running altool at path '/Applications/Xcode_16.4.app/Contents/SharedFrameworks/ContentDeliveryServices.framework/Frameworks/AppStoreService.framework/Support/altool'...
+2026-02-17 12:34:27.436 ERROR: [altool.6000038401C0] [ContentDelivery.Uploader.6000038401C0] Validation failed (409) Redundant Binary Upload. You've already uploaded a build with build number '1' for version number '1.0.0'. Make sure you increment the build string before you upload your app to App Store Connect. Learn more in Xcode Help (http://help.apple.com/xcode/mac/current/#/devba7f53ad4). (ID: 42a61273-dbe9-4148-b9d1-44ca2da97cb9)
+2026-02-17 12:34:38.743  INFO: [altool.6000038401C0] [ContentDelivery.Uploader.6000038401C0] 
+=======================================
+UPLOAD FAILED with 1 error, 0 warnings, 0 messages
+=======================================
+2026-02-17 12:34:38.749 ERROR: [altool.6000038401C0] Error uploading 'Thermometer.ipa/Thermometer.ipa'.
+2026-02-17 12:34:38.749 ERROR: [altool.6000038401C0] Validation failed Redundant Binary Upload. You've already uploaded a build with build number '1' for version number '1.0.0'. Make sure you increment the build string before you upload your app to App Store Connect. Learn more in Xcode Help (http://help.apple.com/xcode/mac/current/#/devba7f53ad4). (ID: 42a61273-dbe9-4148-b9d1-44ca2da97cb9) (409)
+ {
+    NSLocalizedDescription = "Validation failed";
+    NSLocalizedFailureReason = "Redundant Binary Upload. You've already uploaded a build with build number '1' for version number '1.0.0'. Make sure you increment the build string before you upload your app to App Store Connect. Learn more in Xcode Help (http://help.apple.com/xcode/mac/current/#/devba7f53ad4). (ID: 42a61273-dbe9-4148-b9d1-44ca2da97cb9)";
+    NSUnderlyingError = "Error Domain=IrisAPI Code=-19241 \"Validation failed\" UserInfo={status=409, detail=Redundant Binary Upload. You've already uploaded a build with build number '1' for version number '1.0.0'. Make sure you increment the build string before you upload your app to App Store Connect. Learn more in Xcode Help (http://help.apple.com/xcode/mac/current/#/devba7f53ad4)., id=42a61273-dbe9-4148-b9d1-44ca2da97cb9, code=STATE_ERROR.VALIDATION_ERROR, title=Validation failed, NSLocalizedFailureReason=Redundant Binary Upload. You've already uploaded a build with build number '1' for version number '1.0.0'. Make sure you increment the build string before you upload your app to App Store Connect. Learn more in Xcode Help (http://help.apple.com/xcode/mac/current/#/devba7f53ad4)., NSLocalizedDescription=Validation failed}";
+    "iris-code" = "STATE_ERROR.VALIDATION_ERROR";
+}

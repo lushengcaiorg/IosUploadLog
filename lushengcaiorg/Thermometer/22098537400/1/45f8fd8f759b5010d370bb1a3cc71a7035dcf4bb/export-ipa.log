@@ -1,0 +1,4 @@
+2026-02-17 12:34:06.614 xcodebuild[5366:24602] [MT] IDEDistribution: -[IDEDistributionLogging _createLoggingBundleAtPath:]: Created bundle at path "/var/folders/w0/cd8qgn052r16zsblrrxl1gxw0000gn/T/Thermometer_2026-02-17_12-34-06.604.xcdistributionlogs".
+Exported Thermometer to: /Users/runner/work/Thermometer/Thermometer/Thermometer.ipa
+** EXPORT SUCCEEDED **
+
