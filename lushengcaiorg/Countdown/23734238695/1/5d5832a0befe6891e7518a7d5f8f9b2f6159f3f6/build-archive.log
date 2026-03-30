@@ -1,0 +1,74 @@
+Command line invocation:
+    /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/xcodebuild archive -workspace ./1010Countdown.xcworkspace -scheme 1010Countdown -configuration Release -destination generic/platform=iOS -archivePath /Users/runner/work/Countdown/Countdown/build.xcarchive
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (7 targets)
+    Target '1010Countdown' in project '1010Countdown'
+        ➜ Implicit dependency on target 'Pods-1010Countdown' in project 'Pods' via file 'Pods_1010Countdown.framework' in build phase 'Link Binary'
+        ➜ Implicit dependency on target 'SubscriptionKit' in project 'Pods' via options '-framework SubscriptionKit' in build setting 'OTHER_LDFLAGS'
+    Target 'Pods-1010Countdown' in project 'Pods'
+        ➜ Explicit dependency on target 'SubscriptionKit' in project 'Pods'
+        ➜ Explicit dependency on target 'UMAPM' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'SubscriptionKit' in project 'Pods'
+        ➜ Explicit dependency on target 'SubscriptionKit-SubscriptionKit' in project 'Pods'
+        ➜ Explicit dependency on target 'UMAPM' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'UMAPM' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+    Target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'UMDevice' in project 'Pods' (no dependencies)
+    Target 'SubscriptionKit-SubscriptionKit' in project 'Pods' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/ibtool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/runner/work/Countdown/Countdown/1010Countdown/ImageAsset/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -V
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: a5e1607c0d95c3e95ef923f459ed6d05
+Build description path: /Users/runner/Library/Developer/Xcode/DerivedData/1010Countdown-beqfvhrluyuvxmfcvfbhtrwhzbzl/Build/Intermediates.noindex/ArchiveIntermediates/1010Countdown/IntermediateBuildFilesPath/XCBuildData/a5e1607c0d95c3e95ef923f459ed6d05.xcbuilddata
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'SubscriptionKit' from project 'Pods')
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'Pods-1010Countdown' from project 'Pods')
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'UMAPM' from project 'Pods')
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'UMCommon' from project 'Pods')
+/Users/runner/work/Countdown/Countdown/1010Countdown.xcodeproj: error: No profile for team 'C6FCVAR45U' matching 'dayCount' found: Xcode couldn't find any provisioning profiles matching 'C6FCVAR45U/dayCount'. Install the profile (by dragging and dropping it onto Xcode's dock item) or select a different one in the Signing & Capabilities tab of the target editor. (in target '1010Countdown' from project '1010Countdown')
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target '1010Countdown' from project '1010Countdown')
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'UMDevice' from project 'Pods')
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'SubscriptionKit-SubscriptionKit' from project 'Pods')
+** ARCHIVE FAILED **
+
+
+The following build commands failed:
+	Archiving workspace 1010Countdown with scheme 1010Countdown
+(1 failure)
