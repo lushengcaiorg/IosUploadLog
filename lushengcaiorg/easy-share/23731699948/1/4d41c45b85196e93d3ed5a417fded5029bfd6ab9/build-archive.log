@@ -1,0 +1,70 @@
+Command line invocation:
+    /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/xcodebuild archive -workspace ./easy-share.xcworkspace -scheme easy-share -configuration Release -destination generic/platform=iOS -archivePath /Users/runner/work/easy-share/easy-share/build.xcarchive
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (6 targets)
+    Target 'easy-share' in project 'easy-share'
+        ➜ Implicit dependency on target 'Pods-easy-share' in project 'Pods' via file 'Pods_easy_share.framework' in build phase 'Link Binary'
+        ➜ Implicit dependency on target 'CaoRuiSubscriptionKit' in project 'Pods' via options '-framework CaoRuiSubscriptionKit' in build setting 'OTHER_LDFLAGS'
+    Target 'Pods-easy-share' in project 'Pods'
+        ➜ Explicit dependency on target 'CaoRuiSubscriptionKit' in project 'Pods'
+        ➜ Explicit dependency on target 'UMAPM' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'CaoRuiSubscriptionKit' in project 'Pods'
+        ➜ Explicit dependency on target 'UMAPM' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'UMAPM' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+    Target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'UMDevice' in project 'Pods' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/runner/work/easy-share/easy-share/easy-share/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -V
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: a7a6289117f83a31af50bcc9e32bf268
+Build description path: /Users/runner/Library/Developer/Xcode/DerivedData/easy-share-eyyuabwjhqalefhbblarpflspwnc/Build/Intermediates.noindex/ArchiveIntermediates/easy-share/IntermediateBuildFilesPath/XCBuildData/a7a6289117f83a31af50bcc9e32bf268.xcbuilddata
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'UMDevice' from project 'Pods')
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'UMCommon' from project 'Pods')
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'Pods-easy-share' from project 'Pods')
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'CaoRuiSubscriptionKit' from project 'Pods')
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'UMAPM' from project 'Pods')
+/Users/runner/work/easy-share/easy-share/easy-share.xcodeproj: error: Provisioning profile "appstore-6757070521-20260330064833587" doesn't support the App Groups capability.  (in target 'easy-share' from project 'easy-share')
+/Users/runner/work/easy-share/easy-share/easy-share.xcodeproj: error: Provisioning profile "appstore-6757070521-20260330064833587" doesn't include the com.apple.security.application-groups entitlement. Profile qualification is using entitlement definitions that may be out of date. Connect to network to update. (in target 'easy-share' from project 'easy-share')
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'easy-share' from project 'easy-share')
+** ARCHIVE FAILED **
+
+
+The following build commands failed:
+	Archiving workspace easy-share with scheme easy-share
+(1 failure)
