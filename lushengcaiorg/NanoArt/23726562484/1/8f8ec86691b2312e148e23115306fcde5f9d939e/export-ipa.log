@@ -1,0 +1,4 @@
+2026-03-30 03:25:42.361 xcodebuild[7897:27474] [MT] IDEDistribution: -[IDEDistributionLogging _createLoggingBundleAtPath:]: Created bundle at path "/var/folders/tb/y368xp_x10s3ty1b_mtl5mxr0000gn/T/NanoArt_2026-03-30_03-25-42.359.xcdistributionlogs".
+Exported NanoArt to: /Users/runner/work/NanoArt/NanoArt/NanoArt.ipa
+** EXPORT SUCCEEDED **
+
