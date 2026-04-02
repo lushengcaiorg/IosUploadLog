@@ -1,0 +1,4 @@
+2026-04-02 02:15:07.833 xcodebuild[23268:67493] [MT] IDEDistribution: -[IDEDistributionLogging _createLoggingBundleAtPath:]: Created bundle at path "/var/folders/tb/y368xp_x10s3ty1b_mtl5mxr0000gn/T/leaf-sense_2026-04-02_02-15-07.832.xcdistributionlogs".
+Exported leaf-sense to: /Users/runner/work/leaf-sense/leaf-sense/leaf-sense.ipa
+** EXPORT SUCCEEDED **
+
