@@ -1,0 +1,4 @@
+2026-04-03 09:10:04.010 xcodebuild[7151:25829] [MT] IDEDistribution: -[IDEDistributionLogging _createLoggingBundleAtPath:]: Created bundle at path "/var/folders/tb/y368xp_x10s3ty1b_mtl5mxr0000gn/T/ToolsCleanApp_2026-04-03_09-10-04.008.xcdistributionlogs".
+Exported ToolsCleanApp to: /Users/runner/work/ToolsCleanApp/ToolsCleanApp/ToolsCleanApp.ipa
+** EXPORT SUCCEEDED **
+
